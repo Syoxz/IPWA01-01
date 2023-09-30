@@ -14,6 +14,7 @@ import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -22,19 +23,20 @@ import {FormsModule} from "@angular/forms";
     ContentComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatListModule,
-    MatIconModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatTableModule,
-    MatSortModule,
-    MatInputModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatListModule,
+        MatIconModule,
+        MatButtonModule,
+        MatMenuModule,
+        MatTableModule,
+        MatSortModule,
+        MatInputModule,
+        FormsModule,
+        MatSidenavModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

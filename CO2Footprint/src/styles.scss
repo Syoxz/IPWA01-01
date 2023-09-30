@@ -1,18 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: 0;
+  background: linear-gradient(to bottom, #485460, #ffffff);
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-body {
-  flex: 1; /* Grow to fill available space */
-}
-
 app-root {
-  flex: 1; /* Grow to fill available space */
+  display:flex;
+  height: 100vh;
 }
 
+.mat-drawer-inner-container {
+  background: linear-gradient(to bottom, #004400, #808080);
+}
+
+mat-sidenav {
+  height: 100vh;
+}

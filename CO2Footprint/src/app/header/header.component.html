@@ -1,1 +1,30 @@
-<mat-toolbar>Co2 Footprint</mat-toolbar>
+<mat-toolbar class="header">
+  <button mat-button class="sideMenu" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <button mat-icon-button>
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <button mat-button>
+    <mat-label>About</mat-label>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>email</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav #sidenav [position]="position">
+    <button mat-button (click)="sidenav.toggle()" class = "closeButton">
+      <mat-icon>close</mat-icon>
+    </button>
+  <div class = "sidenav">
+  <button mat-fab extended color="primary">
+      <mat-icon>email</mat-icon>
+      Test
+    </button>
+    <button mat-icon-button>
+      <mat-icon>email</mat-icon>
+    </button>
+  </div>
+</mat-sidenav>

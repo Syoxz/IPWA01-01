@@ -1,7 +1,8 @@
 import {LiveAnnouncer} from '@angular/cdk/a11y';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {MatSort, Sort} from '@angular/material/sort';
+import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import {FormControl} from "@angular/forms";
 
 export interface CO2Footprint {
   cO2_ausstoss : number;
@@ -20,6 +21,10 @@ const ELEMENT_DATA: CO2Footprint[] = [
   { position: 8, cO2_ausstoss: 1700000, unternehmen: 'TotalEnergies', land: 'Frankreich' },
   { position: 9, cO2_ausstoss: 1600000, unternehmen: 'Kuwait Petroleum Corporation', land: 'Kuwait' },
   { position: 10, cO2_ausstoss: 1500000, unternehmen: 'PetroChina', land: 'China' },
+  { position: 11, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China' },
+  { position: 12, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China' },
+  { position: 13, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China' },
+
 ];
 
 @Component({
@@ -29,10 +34,9 @@ const ELEMENT_DATA: CO2Footprint[] = [
 })
 export class ContentComponent implements AfterViewInit{
   filterValue: string = '';
-
   displayedColumns: string[] = ['position', 'co2_ausstoß', 'unternehmen', 'land'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
-
+  position = new FormControl('start' as 'start' | 'end');
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
 
   @ViewChild(MatSort) sort!: MatSort;
@@ -51,14 +55,5 @@ export class ContentComponent implements AfterViewInit{
       );
     };
 
-
   }
-
-
-
-
-
-
-
-
 }

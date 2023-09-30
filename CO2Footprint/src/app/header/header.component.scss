@@ -1,3 +1,14 @@
-.example-spacer {
-  flex: 1 1 auto;
+.header {
+  justify-content: space-evenly;
+}
+
+.sidenav {
+  display: flex;
+  padding: .5rem;
+  flex-direction: column;
+}
+
+.closeButton {
+  width: 100%;
+  border: 1px solid black;
 }
