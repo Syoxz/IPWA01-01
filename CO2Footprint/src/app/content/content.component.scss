@@ -3,6 +3,12 @@ table {
   overflow: hidden;
   border-radius: 16px;
 }
+.search {
+  width: 100%;
+}
+.impressum, .about {
+  padding: .5rem;
+}
 
  .mat-mdc-row .mat-mdc-cell {
    border-bottom: 1px solid transparent;

@@ -2,15 +2,18 @@ html, body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background: linear-gradient(to bottom, #485460, #ffffff);
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-app-root {
+app-root{
   display:flex;
-  height: 100vh;
+  height:100vh;
 }
-
+app-home, app-about, app-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .mat-drawer-inner-container {
   background: linear-gradient(to bottom, #004400, #808080);
 }

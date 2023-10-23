@@ -1,8 +1,9 @@
 <mat-toolbar class="footer">
-  <button mat-button class = "footer-item">
-    <mat-label>Copyright &copy; {{ currentYear }} Marcel Gast</mat-label>
-  </button>
-  <button mat-button class = "footer-item">
+  <p class ="footer-item copyright">
+    Copyright &copy; {{ currentYear }} Marcel Gast
+  </p>
+  <button mat-button class = "footer-item" routerLink="/impressum">
     <mat-label>Impressum</mat-label>
   </button>
 </mat-toolbar>
+

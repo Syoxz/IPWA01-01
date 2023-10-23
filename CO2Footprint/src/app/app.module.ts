@@ -15,13 +15,27 @@ import {MatSortModule} from "@angular/material/sort";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { AboutComponent } from './about/about.component';
+import {RouterModule, Routes} from "@angular/router";
+import { HomeComponent } from './home/home.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+
+const appRoutes: Routes = [
+  { path: '', redirectTo: '/index', pathMatch: 'full'},
+  { path: 'about', component: AboutComponent},
+  { path: 'index', component: HomeComponent},
+  { path: 'impressum', component: ImpressumComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+    ImpressumComponent,
   ],
     imports: [
         BrowserModule,
@@ -35,7 +49,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
         MatSortModule,
         MatInputModule,
         FormsModule,
-        MatSidenavModule,
+         MatSidenavModule,
+      RouterModule.forRoot(appRoutes)
     ],
   providers: [],
   bootstrap: [AppComponent]
