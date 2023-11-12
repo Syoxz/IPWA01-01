@@ -2,9 +2,16 @@
   justify-content: space-evenly;
 }
 
+.menuButton {
+  margin-bottom: 0.5rem;
+}
+
+
+
 .sidenav {
   display: flex;
   padding: .5rem;
+  justify-content: space-between;
   flex-direction: column;
 }
 

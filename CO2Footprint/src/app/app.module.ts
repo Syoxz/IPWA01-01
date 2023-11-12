@@ -4,7 +4,6 @@ import { MatToolbarModule} from "@angular/material/toolbar";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatListModule} from "@angular/material/list";
 import {MatIconModule} from "@angular/material/icon";
@@ -19,11 +18,13 @@ import { AboutComponent } from './about/about.component';
 import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full'},
   { path: 'about', component: AboutComponent},
   { path: 'index', component: HomeComponent},
+  { path: 'kontakt', component: KontaktComponent},
   { path: 'impressum', component: ImpressumComponent}
 ];
 
@@ -31,11 +32,11 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent,
     FooterComponent,
     AboutComponent,
     HomeComponent,
     ImpressumComponent,
+    KontaktComponent,
   ],
     imports: [
         BrowserModule,
@@ -49,8 +50,8 @@ const appRoutes: Routes = [
         MatSortModule,
         MatInputModule,
         FormsModule,
-         MatSidenavModule,
-      RouterModule.forRoot(appRoutes)
+        MatSidenavModule,
+        RouterModule.forRoot(appRoutes)
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,11 +7,11 @@
     <mat-icon>home</mat-icon>
   </button>
 
-  <button mat-button routerLink="/about">
-    <mat-label>About</mat-label>
+  <button mat-icon-button routerLink="/about">
+    <mat-icon>info</mat-icon>
   </button>
 
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="/kontakt">
     <mat-icon>email</mat-icon>
   </button>
 </mat-toolbar>
@@ -20,12 +20,14 @@
       <mat-icon>close</mat-icon>
     </button>
   <div class = "sidenav">
-  <button mat-fab extended color="primary">
-      <mat-icon>email</mat-icon>
-      Test
+    <button class ="menuButton" mat-fab extended color="secondary">
+      Nachhaltigkeit
     </button>
-    <button mat-icon-button>
-      <mat-icon>email</mat-icon>
+  <button class="menuButton" mat-fab extended color="secondary">
+    Entwicklung
+  </button>
+    <button class="menuButton" mat-fab extended color="secondary">
+      Regulierungen
     </button>
   </div>
 </mat-sidenav>

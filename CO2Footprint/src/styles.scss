@@ -1,23 +1,26 @@
 html, body {
   display: flex;
   flex-direction: column;
+  background: #b3b8ba;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 app-root{
-  display:flex;
-  height:100vh;
+  display: flex;
+  height: 100vh;
 }
-app-home, app-about, app-content {
+app-home, app-about, app-impressum, app-kontakt {
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding: .5rem;
 }
 .mat-drawer-inner-container {
-  background: linear-gradient(to bottom, #004400, #808080);
+  background: #393636;
 }
 
-mat-sidenav {
-  height: 100vh;
+.mat-secondary {
+  background-color: #595459 !important;
 }
+
