@@ -19,10 +19,6 @@ const ELEMENT_DATA: CO2Footprint[] = [
   {position: 8, cO2_ausstoss: 1700000, unternehmen: 'TotalEnergies', land: 'Frankreich'},
   {position: 9, cO2_ausstoss: 1600000, unternehmen: 'Kuwait Petroleum Corporation', land: 'Kuwait'},
   {position: 10, cO2_ausstoss: 1500000, unternehmen: 'PetroChina', land: 'China'},
-  {position: 11, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China'},
-  {position: 12, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China'},
-  {position: 13, cO2_ausstoss: 1900000, unternehmen: 'Sinopec Group', land: 'China'},
-
 ];
 
 @Component({
