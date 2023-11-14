@@ -10,7 +10,7 @@ app-root{
   display: flex;
   height: 100vh;
 }
-app-home, app-about, app-impressum, app-kontakt, app-entwicklung, app-nachhaltigkeit, app-regulierungen {
+router-outlet + * {
   display: flex;
   flex-direction: column;
   flex: 1;
