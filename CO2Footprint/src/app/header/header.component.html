@@ -20,13 +20,13 @@
       <mat-icon>close</mat-icon>
     </button>
   <div class = "sidenav">
-    <button class ="menuButton" mat-fab extended color="secondary">
+    <button class ="menuButton" (click)="sidenav.close()" mat-fab extended color="secondary" routerLink="/nachhaltigkeit">
       Nachhaltigkeit
     </button>
-  <button class="menuButton" mat-fab extended color="secondary">
+  <button class="menuButton" (click)="sidenav.close()" mat-fab extended color="secondary" routerLink="/entwicklung">
     Entwicklung
   </button>
-    <button class="menuButton" mat-fab extended color="secondary">
+    <button class="menuButton" (click)="sidenav.close()" mat-fab extended color="secondary" routerLink="/regulierungen">
       Regulierungen
     </button>
   </div>

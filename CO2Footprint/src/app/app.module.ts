@@ -19,14 +19,21 @@ import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { RegulierungenComponent } from './regulierungen/regulierungen.component';
+import { EntwicklungComponent } from './entwicklung/entwicklung.component';
+import { NachhaltigkeitComponent } from './nachhaltigkeit/nachhaltigkeit.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full'},
   { path: 'about', component: AboutComponent},
   { path: 'index', component: HomeComponent},
   { path: 'kontakt', component: KontaktComponent},
+  { path: 'regulierungen', component: RegulierungenComponent},
+  { path: 'nachhaltigkeit', component: NachhaltigkeitComponent},
+  { path: 'entwicklung', component: EntwicklungComponent},
   { path: 'impressum', component: ImpressumComponent}
 ];
+
 
 @NgModule({
   declarations: [
@@ -37,6 +44,9 @@ const appRoutes: Routes = [
     HomeComponent,
     ImpressumComponent,
     KontaktComponent,
+    RegulierungenComponent,
+    EntwicklungComponent,
+    NachhaltigkeitComponent,
   ],
     imports: [
         BrowserModule,
