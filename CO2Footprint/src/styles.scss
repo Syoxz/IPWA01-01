@@ -1,23 +1,14 @@
 html, body {
-  display: flex;
-  flex-direction: column;
   background: #b3b8ba;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-app-root{
-  display: flex;
-  height: 100vh;
-}
 router-outlet + * {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: .5rem;
-}
-.mat-drawer-inner-container {
-  background: #393636;
 }
 
 .mat-secondary {
