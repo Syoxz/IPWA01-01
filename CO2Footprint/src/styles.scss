@@ -3,6 +3,10 @@ html, body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+app-root{
+  display: flex;
+  height: 100vh;
+}
 
 router-outlet + * {
   display: flex;
